@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="contenedor-principal">
+    <header class="cabecera-principal">
+      <article class="logo">
+        <img src="img/logo.png" alt="logo Craftsy">
+      </article>
+
+      <ul class="login-navbar">
+        <li><a href="#">Registro</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </header>
+    </div>
+    <div class="contenedor-login">
+      <br>
+      <section>
+       <h1>LOGO</h1>
+        <br>
+        <form class="registro" action="index.html" method="post">
+          <div class ="contenedor-input">
+            <label for="email"></label>
+            <br>
+            <input id=email type="email" name="email" value="" placeholder="Email">
+          </div>
+
+          <div class="contenedor-input">
+            <label for="pass"></label>
+
+            <input id=pass type="password" name="pass" value="" placeholder="Contraseña">
+          </div>
+          <label id="recordarme">
+          <input type="checkbox" name="recordarme" value="rec"> Recordarme
+          </label>
+            <br><br>
+          <button type="submit" name="button">Iniciar Sesión</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

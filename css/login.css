@@ -1,0 +1,69 @@
+.contenedor-principal {
+	background-color: rgb(2, 9, 20);
+	padding: 15px;
+	margin-bottom: 30px;
+	overflow: hidden; /* para contener a los elementos flotados que hay adentro de este contenedor */
+}
+
+.logo, .main-navbar {
+	float: left;
+}
+
+.main-navbar li, .login-navbar li {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.main-navbar a, .login-navbar a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.login-navbar {
+	float: right;
+}
+
+.contenedor-login{
+  margin: auto;
+  width: 380px;
+  margin-top: 105px;
+  padding-bottom: 25px;
+  border: solid 1px red;
+}
+
+.contenedor-input{
+  margin-bottom: 20px;
+}
+
+.contenedor-input input {
+  display: block;
+  width: 75%;
+  margin: auto;
+  height: 30px;
+  border: solid 1px rgb(146, 148, 149);
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+button {
+  background-color: rgb(2, 9, 20);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: none;
+  margin-left: 28%;
+}
+
+#recordarme {
+  margin-left: 30%;
+}
+
+.contenedor-login section h1{
+  margin-left: 40%;
+}

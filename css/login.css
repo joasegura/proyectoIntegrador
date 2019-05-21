@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	background: url(../subtle_stripes.png);
+}
+
 .contenedor-principal {
 	background-color: rgb(2, 9, 20);
 	padding: 15px;
@@ -46,7 +50,7 @@
   width: 380px;
   margin-top: 105px;
   padding-bottom: 25px;
-  border: solid 1px red; /* temporal */
+  /*border: solid 1px red; /* temporal */
 }
 
 .contenedor-input{
@@ -79,6 +83,10 @@ button {
 	margin:auto;
 }
 
+button:hover {
+	background-color: rgb(1, 41, 80);
+}
+
 #recordarme {
 	font-family: 'Anton', sans-serif;
 	font-size: 15px;
@@ -98,6 +106,6 @@ button {
 	text-transform: uppercase;
 	font-family: 'Anton', sans-serif;
 	font-size: 12px;
-	margin-left: 53%;
+	margin-left: 13%;
 	top: 50%;
 }

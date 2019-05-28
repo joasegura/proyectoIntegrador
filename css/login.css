@@ -114,3 +114,19 @@ button:hover {
 	margin-left: 13%;
 	top: 50%;
 }
+
+/* responsive */
+
+@media (max-width:768px) {
+	.contenedor-login{
+		width: 100%
+	}
+
+	.contenedor-principal{
+		min-width: 370px;
+	}
+
+	.container-login{
+		min-width: 370px;
+	}
+}

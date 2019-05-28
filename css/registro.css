@@ -138,3 +138,19 @@ button:hover {
 	height: auto;
 	width: auto;
 }
+
+/* responsive */
+
+@media (max-width:768px) {
+
+	.contenedor-registro{
+		width: 100%
+	}
+
+	.container-registro{
+		min-width: 370px;
+	}
+
+	.contenedor-principal{
+		min-width: 370px;
+	}

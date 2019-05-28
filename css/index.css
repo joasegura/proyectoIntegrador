@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Maiden+Orange');
 @import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 @import "normalize.css";
 
 * {
@@ -13,20 +14,27 @@ body {
 
 ul, ol{
   padding: 0;
-  display: block;
+  margin: 0;
+	list-style: none;
 }
-li {
-  list-style-type: none;
+
+img {
+	width: 100%;
 }
+
 
 a{
   text-decoration: none;
 }
 
+.toggle-nav {
+	display: none;
+}
+
 .contenedor-principal {
 	background-color: rgb(2, 9, 20);
 	padding: 15px;
-	overflow: hidden; /* para contener a los elementos flotados que hay adentro de este contenedor */
+	overflow: hidden;
 }
 
 .fas{
@@ -61,16 +69,21 @@ a{
 	text-transform: uppercase;
 }
 
-.main-nav li {
-  margin-bottom: 2px;
-
+.main-nav{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
 }
-.main-nav a {
-  display: inline-block;
-  width: 20%;
-  padding:8px 0;
-  text-transform: uppercase;
-  color: #fff;
+
+.main-nav a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+}
+
+.main-nav li{
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .container{
@@ -81,21 +94,9 @@ a{
   right: 35%;
 }
 
-.nav-flex {
-  display: flex;
-}
-
-.nav-flex li {
-  padding: 0 20px;
-}
-
-#border{
-  border-right: 1px solid #fff;
-}
-
 .container-home{
 	margin: 0 auto;
-	width: 85%;
+	max-width: 1200px;
 }
 
 .banner{
@@ -104,9 +105,7 @@ a{
 }
 
 .banner img {
-  margin-top: 90px;
-  width: 100%;
-	height: 550px;
+  margin-top: 5px;
 }
 
 /* productos */
@@ -114,69 +113,151 @@ a{
 .contenedor-productos{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin: auto;
 	margin-bottom: 20px;
+	max-width: 1200px;
+}
+
+.producto {
+	width: 32%;
 }
 
 .foto-producto{
-	margin-top: 20px;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border: 2.5px solid rgba(62, 54, 54, 0.26);
+	background-color: #fff;
 }
-.foto-producto img{
-		width: 350px;
-		height: auto;
-}
 
-
-
-.producto .ver-mas {
+.producto .comprar {
   display: block;
   padding: 10px 15px;
   color:#fff;
 	text-align: center;
   background: rgb(2, 9, 20);
-	margin-left: 75px;
-	margin-right: 75px;
+	margin: auto;
+	max-width: 150px;
+	font-family: 'Anton', sans-serif;
 }
 
 .producto h4{
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
 }
 
 /* footer */
-.main-footer li {
-  margin-bottom: 2px;
 
-}
 .main-footer a {
-  display: inline-block;
-  padding:10px 0;
+  display: block;
   text-transform: uppercase;
   color: #fff;
+	font-family: 'Anton', sans-serif;
+	padding: 15px 30px;
 }
 
 .container-footer{
-  display: inline-block;
   background-color: rgb(2, 9, 20);
   border-radius: 30px 30px 0 0;
-  position:absolute;
-  right: 26%;
-	margin-top: 20px;
-	width: 50%;
+	max-width: 1200px;
+	margin: 20px auto 0;
 
 }
 
 .footer-flex {
   display: flex;
+	justify-content: center;
 }
 
 .footer-flex li {
-	padding-left: 55px;
-	padding-right: 50px;
+
 }
 
+/* responsive */
 
-@media (max-width:600px) {
-	body{
-		background: red;
+@media (max-width:768px) {
+	.container-home {
+		margin: 0 15px;
 	}
+
+	.contenedor-principal{
+		width: 100%
+	}
+
+	.contenedor-productos{
+		margin: 0 auto;
+	}
+
+	.producto{
+		width: 49%;
+	}
+}
+
+@media (max-width: 550px) {
+	.container-home{
+		min-width: 370px;
+	}
+
+	.contenedor-principal{
+		min-width: 370px;
+	}
+
+	.banner{
+		display: none;
+	}
+
+	.toggle-nav {
+		display: flex;
+		background-color: #000;
+		color: #FFF;
+		border: none;
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+	}
+
+	.toggle-nav .fas {
+		margin: 0;
+		font-size: 22px;
+	}
+
+	.main-nav {
+		flex-direction: column;
+		margin: 0;
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	.main-nav li {
+		margin: 0;
+	}
+
+	.main-nav a {
+		display: block;
+		background-color: #000;
+		color: #fff;
+		padding: 15px;
+		border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+	}
+
+	.producto {
+		width: 100%;
+	}
+	.main-footer a{
+		padding: 5px 15px;
+	}
+
+	.container-footer{
+		min-width: 370px;
+	}
+
 }

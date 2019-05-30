@@ -129,4 +129,8 @@ button:hover {
 	.container-login{
 		min-width: 370px;
 	}
+
+	.registro{
+		width: 100%;
+	}
 }

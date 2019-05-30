@@ -154,3 +154,17 @@ button:hover {
 	.contenedor-principal{
 		min-width: 370px;
 	}
+
+	@media (max-width: 550px) {
+
+		.contenedor-registro{
+			width: 100%;
+		}
+
+		.container-registro{
+			min-width: 70px;
+		}
+
+		.contenedor-principal{
+			min-width: 70px;
+		}

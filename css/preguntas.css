@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Maiden+Orange');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import "normalize.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../subtle_stripes.png);
+}
+
+ul, ol{
+  padding: 0;
+  margin: 0;
+	list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.toggle-nav {
+	display: none;
+}
+
+.contenedor-principal {
+	background-color: rgb(2, 9, 20);
+	padding: 15px;
+	overflow: hidden;
+}
+
+
+.logo {
+	float: left;
+	font-family: 'Pacifico', cursive;
+	color: white;
+	margin: 5px;
+	font-size: 45px;
+}
+
+.login-navbar {
+	float: right;
+	margin: 5px;
+	font-size: 20px;
+}
+
+.login-navbar li {
+	display: inline-block;
+	font-family: 'Anton', sans-serif;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.login-navbar a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+}

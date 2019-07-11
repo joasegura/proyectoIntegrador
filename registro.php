@@ -35,6 +35,9 @@ if($_POST){
   }else if (strlen($contrasenia) < 5) {
     $errorContrasenia = "Las contraseñas debe tener al menos 5 caracteres";
     $hayErrores = true;
+  }else if (!preg_match("/DH/", "$contrasenia")) {
+    $errorContrasenia = "Debe contener DH";
+    $hayErrores = true;
   }else if ($contrasenia != $confirmarContrasenia) {
     $errorConfirmarContrasenia = "Las contraseñas no coinciden";
     $hayErrores = true;
@@ -95,10 +98,10 @@ if($_POST){
   <body>
     <div class="contenedor-principal">
     <header class="cabecera-principal">
-      <h1 class="logo"><a href="index.html">Logo</a></h1>
+      <h1 class="logo"><a href="index.php">Logo</a></h1>
       <ul class="registro-navbar">
-        <li><a href="registro.html">Registro</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="registro.php">Registro</a></li>
+        <li><a href="login.php">Login</a></li>
       </ul>
     </header>
     </div>
@@ -115,7 +118,9 @@ if($_POST){
             <label for="nombre"></label>
             <br>
             <input type="text" name="nombreCompleto" value="" placeholder="Nombre completo*">
-            <?= $errorNombreCompleto ?>
+            <div class="errores">
+              <?= $errorNombreCompleto ?>
+            </div>
           </div>
 
           <div class="contenedor-input">

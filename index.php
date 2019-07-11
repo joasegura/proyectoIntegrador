@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -17,8 +17,8 @@
     <header class="cabecera-principal">
       <h1 class="logo">Logo</h1>
       <ul class="login-navbar">
-        <li><a href="registro.html">Registro</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="registro.php">Registro</a></li>
+        <li><a href="login.php">Login</a></li>
         <i class="fas fa-cart-plus"></i>
       </ul>
     </header>

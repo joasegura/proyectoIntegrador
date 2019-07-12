@@ -1,9 +1,22 @@
- [
+[
     {
         "nombreCompleto": "prueba",
         "usuario": "prueba1",
         "correo": "prueba@dh.com",
         "clave": "$2y$10$Wiqk71855aykvq0\/oKT0weO\/6XeuRHFZhxCYCNjVn2WVdxNM9x8rO",
         "imagen": "pruebafotodeperfil."
+    },
+    {
+        "nombreCompleto": "Diego Caplan",
+        "usuario": {
+            "nombreCompleto": "prueba",
+            "usuario": "prueba1",
+            "correo": "prueba@dh.com",
+            "clave": "$2y$10$Wiqk71855aykvq0\/oKT0weO\/6XeuRHFZhxCYCNjVn2WVdxNM9x8rO",
+            "imagen": "pruebafotodeperfil."
+        },
+        "correo": "diego@dh.com",
+        "clave": "$2y$10$6txhwgIMNusH4SG1EG9Zn.aoLLgXSehKI0LAdhajGWnpMN70HPftG",
+        "imagen": "Diego Caplanfotodeperfil.jpeg"
     }
 ]

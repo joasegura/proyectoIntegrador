@@ -7,6 +7,7 @@ $errorContrasenia = "";
 $errorConfirmarContrasenia = "";
 $errorFoto = "";
 $hayErrores = false;
+$userMail = "";
 
 if($_POST){
 
@@ -29,6 +30,20 @@ if($_POST){
     $errorEmail = "Email no válido";
     $hayErrores = true;
   }
+  $usuariosExistentes = file_get_contents('usuarios.json');
+  $usuariosExistentes = json_decode($usuariosExistentes, true);
+  foreach ($usuariosExistentes as $usuario) {
+    if ($email == $usuario["correo"]) {
+      $userMail = true;
+      break;
+    }
+  }
+  if ($userMail == true) {
+    $errorEmail = "El mail ya se encuentra registrado";
+    $hayErrores = true;
+  }
+
+
   if ($contrasenia == "") {
     $errorContrasenia = "Completa la contraseña";
     $hayErrores = true;
@@ -77,8 +92,6 @@ if($_POST){
     $usuariosEnJson = json_encode($usuariosExistentes, JSON_PRETTY_PRINT);
     file_put_contents('usuarios.json', $usuariosEnJson);
     echo "<h2>Gracias por su registro!<h2>";
-    $usuariosExistentes = file_get_contents('usuarios.json');
-    $usuariosExistentes = json_decode($usuariosExistentes, true);
     exit;
   }
 }

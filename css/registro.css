@@ -154,7 +154,7 @@ button:hover {
 	.contenedor-principal{
 		min-width: 370px;
 	}
-
+}
 	@media (max-width: 550px) {
 
 		.contenedor-registro{
@@ -168,5 +168,8 @@ button:hover {
 		.contenedor-principal{
 			min-width: 70px;
 		}
-
+}
 		/* errores en rojo */
+.errores {
+	color: red;
+}

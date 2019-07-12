@@ -139,25 +139,33 @@ if($_POST){
           <div class="contenedor-input">
             <label for="apellido"></label>
             <input type="text" name="usuario" value="" placeholder="Nombre de usuario*">
-            <?= $errorUsuario ?>
+            <div class="errores">
+              <?= $errorUsuario ?>
+            </div>
           </div>
 
           <div class="contenedor-input">
             <label for="email"></label>
             <input type="email" name="correo" value="" placeholder="Email*">
-            <?= $errorEmail ?>
+            <div class="errores">
+              <?= $errorEmail ?>
+            </div>
           </div>
 
           <div class="contenedor-input">
             <label for="contraseña"></label>
             <input type="password" name="clave" value="" placeholder="Contraseña*">
-            <?= $errorContrasenia ?>
+            <div class="errores">
+              <?= $errorContrasenia ?>
+            </div>
           </div>
 
           <div class="contenedor-input">
             <label for="contraseña"></label>
             <input type="password" name="claveConfirmar" value="" placeholder="Repetir contraseña*">
-            <?= $errorConfirmarContrasenia ?>
+            <div class="errores">
+              <?= $errorConfirmarContrasenia ?>
+            </div>
           </div>
 
           <div class="contenedor-input">
@@ -195,7 +203,9 @@ if($_POST){
              <div class="contenedor-input">
                <label for="file"></label>
                <input type="file" name="imagen">
-               <?= $errorFoto ?>
+               <div class="errores">
+                 <?= $errorFoto ?>
+               </div>
              </div>
 
           <div class="input-container">
